@@ -154,7 +154,9 @@
 
           $('.bgcolor')
             .scrollie({
-            scrollOffset : -50,
+            direction : 'both',
+            scrollOffset : -100,
+             scrollRatio : 2,
             scrollingInView : function(elem) {      
               var bgColor = elem.data('background');
               $('body').css('background-color', bgColor);
