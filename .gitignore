@@ -3,3 +3,6 @@
 
 #codekit
 config.codekit3
+
+#nodemodules
+node_modules/
