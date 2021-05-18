@@ -86,6 +86,7 @@
 
 .project img {
     width: 600px;
+    height:auto;
 }
 
 .project-images .project:nth-child(2) {
@@ -256,6 +257,7 @@
 
     .project img {
         width:100%;
+        height: auto;
     }
 
     .project-images .project:nth-child(2) {
@@ -287,10 +289,11 @@
     .hero-image .elipse1 {
         position: absolute;
         z-index: 3;
-        top: 175px;
+        top: 190px;
         width: 300px;
         left: 0;
         right: 0;
+        margin: 0 auto;
     }
     
     .hero-image .elipse2 {
@@ -298,16 +301,18 @@
         width: 300px;
         z-index: 1;
         top: 153px;
-        left: -1px;
+        left: -2px;
         right: 0;
+        margin: 0 auto;
     }
     
     .hero-image .wes {
         position: absolute;
         z-index: 2;
-        width: 225px;
-        top: 190px;
-        left: 0;
+        width: 262px;
+        height: 300px;
+        top: 218px;
+        left: 8px;
         right: 0;
         margin: 0 auto;
     }
@@ -346,6 +351,7 @@
 
     .project img {
         width:100%;
+        height:auto;
     }
 
     .project-images .project:nth-child(2) {
