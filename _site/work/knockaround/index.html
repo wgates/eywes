@@ -392,6 +392,7 @@ $(document).on('click', 'a[href^="#"]', function (event) {
         </div>
 
       <script>
+      $(document).ready(function() {
         $( window ).ready(function() {
         var wHeight = $(window).height();
 
@@ -404,6 +405,7 @@ $(document).on('click', 'a[href^="#"]', function (event) {
             }
           });
         });
+      });
 
         function hamBurger() {
           var x = document.getElementById("burgerMenu");

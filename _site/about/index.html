@@ -267,6 +267,7 @@ setInterval(getSetLastFM, 10 * 1000);
         </div>
 
       <script>
+      $(document).ready(function() {
         $( window ).ready(function() {
         var wHeight = $(window).height();
 
@@ -279,6 +280,7 @@ setInterval(getSetLastFM, 10 * 1000);
             }
           });
         });
+      });
 
         function hamBurger() {
           var x = document.getElementById("burgerMenu");
