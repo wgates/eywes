@@ -1,0 +1,92 @@
+.contact {
+    margin: 10rem 0;
+}
+
+.contact h1 {
+    font-size: 6.25rem;
+    margin: 0;
+}
+
+.contact p {
+    font-size: 1.688rem;
+    max-width: 500px;
+}
+
+.contact-forms {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding-right: 8rem;
+    align-items: flex-start;
+}
+
+.contact-forms p {
+    margin:0;
+    font-size: 1.5rem;
+}
+
+.contact-forms p a {
+    color:#cfaf00;
+    text-decoration: none;
+}
+
+.contact-forms p a:hover {
+    text-decoration: underline;
+}
+
+.contact form {
+    max-width: 600px;
+    padding-right:2rem;
+}
+
+.contact form input {
+    width:100%;
+    margin-bottom:1rem;
+    height: 50px;
+    padding:1rem;
+    border: none;
+}
+
+.contact form input[name=message] {
+    height:200px;
+}
+
+.contact form button {
+    height: 50px;
+    width: 200px;
+    background: #fff;
+    border: none;
+    font-size: 1.3rem;
+    font-weight: 600;
+    transition: background-color 1s, transform 1s;
+}
+.contact form button a {
+    color: #3c3c3c;
+}
+
+.contact form button:hover {
+    background: #cfaf00;
+}
+
+.contact form button a:hover {
+    color: #3c3c3c;
+    text-decoration: none;
+}
+
+@media only screen and (max-width: 1024px) {
+    .contact h1 {
+        font-size: 3.25rem;
+    }
+
+    .contact p {
+        font-size: 1rem;
+    }
+
+    .contact-forms {
+        flex-direction: column;
+    }
+
+    .contact-forms p {
+        margin-top:3rem;
+    }
+}

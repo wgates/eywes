@@ -1,0 +1,22 @@
+---
+layout: layouts/main.njk
+---
+
+<style>
+  body {
+      background-color:#fff;
+  }
+
+  .logo, nav ul li a, footer, footer ul li a, header button .hamburger-icon span, .logo a {
+      color: #3c3c3c;
+  }
+</style>
+
+<article>
+
+    <h1>{{ title }}</h1>
+    <!-- <img src="{{ featuredImage | url }}" alt="{{ featuredImage }}" /> -->
+
+    <p>{{ content | safe }}</p>
+
+</article>

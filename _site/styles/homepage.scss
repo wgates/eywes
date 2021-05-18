@@ -1,0 +1,448 @@
+.hero {
+    display:flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    color:#fff;
+    text-align: center;
+    height: 100vh;
+    margin-top: 3rem;
+}
+
+.hero .hero-image, .hero .hero-text {
+    width:50%;
+}
+
+.hero .hero-image {
+    position: relative;
+}
+ 
+.hero-image .elipse1 {
+    position: absolute;
+    z-index: 3;
+    top: 37px;
+    left: 2px;
+}
+
+.hero-image .elipse2 {
+    position: absolute;
+    left: 0;
+    z-index: 1;
+}
+
+.hero-image .wes {
+    position: absolute;
+    left: 95px;
+    z-index: 2;
+}
+
+.hero .hero-text h1 {
+    font-size:60px;
+    font-weight: 600;
+}
+
+.hero .hero-text p {
+    font-size:1.688rem;
+}
+
+.hero .hero-text span {
+    color:#cfaf00;
+}
+
+/* projects */
+
+.projects {
+    margin-bottom:30rem;
+}
+
+.projects h1 {
+    font-size:6.25rem;
+    margin:0;
+}
+
+.projects p {
+    font-size:1.688rem;
+    max-width:500px;
+}
+
+.project a {
+    color:#fff;
+    text-decoration: none;
+}
+
+.project-images {
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+    justify-content: space-between;
+    margin-bottom: 300px;
+}
+
+.project {
+    height: 400px;
+    flex-shrink: 0;
+    align-self: flex-end;
+}
+
+.project img {
+    width: 600px;
+}
+
+.project-images .project:nth-child(2) {
+    align-self: flex-start;
+    margin: -25px;
+    margin-right: 0;
+}
+
+/* skillz */
+
+.skillz {
+    height:500px;
+    margin: 5rem 0;
+}
+
+.skillz h1 {
+    font-size:6.25rem;
+    margin:0;
+    margin-bottom:2rem;
+}
+
+.skillz p {
+    font-size:1.688rem;
+    max-width:500px;
+    margin:0;
+}
+
+.skillz-text {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.skillz-list {
+    display:flex;
+    flex-direction: row;
+    justify-content: space-between;
+    font-family: anonymous-pro, monospace;
+}
+
+.skillz-text ul {
+    list-style: none;
+    margin: 0;
+}
+
+.skillz-text ul li {
+    color:#fff;
+    font-size:2rem;
+    margin-bottom: 1rem;
+}
+
+/* photos */
+
+.photos {
+    margin: 10rem 0;
+}
+
+.photos h1 {
+    font-size:6.25rem;
+    margin: 0;
+    margin-bottom: 2rem;
+}
+
+.photos p {
+    font-size:1.688rem;
+    max-width:500px;
+}
+
+.photos h1, .photos p, .photo-grid {
+    color:#3c3c3c;
+}
+
+.photo-grid {
+    display: grid;
+    grid-template-columns: auto auto;
+    margin:5rem 0;
+}
+
+.photo-grid .photo {
+    height: 25rem;
+    background-repeat: no-repeat;
+    display: flex;
+    justify-content: flex-end;
+    flex-direction: column;
+    padding: 0 2rem;
+    margin: 1rem 0;
+    transition: all 200ms linear;
+    background-size: cover;
+    width: 35rem;
+    height: 25rem;
+    border-radius: 10px;
+}
+
+.photo-grid .photo:hover {
+    transform: scale(0.94);
+}
+
+.photo-grid .photo p {
+    font-family: niveau-grotesk, sans-serif;
+    font-size:2.375rem;
+    color:#fff;
+}
+
+.photo-grid .photo p  {
+    text-decoration: none;
+    color:#fff;
+}
+
+/* journals */
+
+.journal {
+    margin: 10rem 0 15rem 0;
+}
+
+.journal h1 {
+    font-size:6.25rem;
+    color:#3c3c3c;
+    margin: 0;
+    margin-bottom: 2rem;
+}
+
+.journal p {
+    font-size:1.688rem;
+    color:#3c3c3c;
+}
+
+.journal-entry h3 {
+    font-size: 2.5rem;
+    color:#3c3c3c;
+    margin:0;
+}
+
+.journal-entry h3 a {
+    font-size: 2.5rem;
+    color:#3c3c3c;
+    margin:0;
+    text-decoration: none;
+}
+
+.journal-entry h3 a:hover {
+    text-decoration: underline;
+    text-decoration-color: #cfaf00;
+}
+
+.journal-entry p {
+    font-size: 1.75rem;
+    font-weight:600;
+    color:#3c3c3c;
+    margin:0;
+}
+
+.journal-entries {
+    display: grid;
+    grid-template-columns: auto auto;
+    gap: 50px;
+    margin: 5rem 0;
+}
+
+.journal-entry {
+    width:90%;
+}
+
+@media only screen and (max-width: 1324px) {
+    
+    .project {
+        align-self:center;
+    }
+
+    .project img {
+        width:100%;
+    }
+
+    .project-images .project:nth-child(2) {
+        align-self: center;
+        margin: 0;
+    }
+}
+
+
+@media only screen and (max-width: 1024px) {
+
+    .hero {
+        flex-direction: column;
+        height: 100%;
+        margin-bottom: 3rem;
+        margin-top:5rem;
+    }
+
+    .hero .hero-image, .hero .hero-text {
+        width: 100%;
+    }
+
+    .hero .hero-image {
+        position: relative;
+        height:300px;
+        margin-top:2rem;
+    }
+     
+    .hero-image .elipse1 {
+        position: absolute;
+        z-index: 3;
+        top: 175px;
+        width: 300px;
+        left: 0;
+        right: 0;
+        margin: 0 auto;
+    }
+    
+    .hero-image .elipse2 {
+        position: absolute;
+        width: 300px;
+        z-index: 1;
+        top: 152px;
+        left: 0;
+        right: 2px;
+        margin: 0 auto;
+    }
+    
+    .hero-image .wes {
+        position: absolute;
+        z-index: 2;
+        width: 225px;
+        top: 190px;
+        left: 0;
+        right: 0;
+        margin: 0 auto;
+    }
+
+    .hero .hero-text {
+        z-index: 5;
+    }
+
+    .hero .hero-text p {
+        font-size: 1.288rem;
+    }
+
+    /* projects mobile */
+
+    .projects {
+        margin-bottom: 3rem;
+    }
+
+    .projects h1 {
+        font-size: 3.25rem;
+    }
+
+    .projects p {
+        font-size:1rem;
+    }
+
+    .project-images {
+        margin-top: 3rem;
+        margin-bottom:0;
+    }
+
+    .project {
+        height: auto;
+        align-self:center;
+    }
+
+    .project img {
+        width:100%;
+    }
+
+    .project-images .project:nth-child(2) {
+        align-self: center;
+        margin: 0;
+    }
+
+    /* skillz mobile */
+
+    .skillz {
+        height: auto;
+    }
+
+    .skillz h1 {
+        font-size: 3.25rem;
+        margin:0;
+    }
+
+    .skillz p {
+        font-size:1rem;
+        margin: 1rem 0;
+    }
+
+    .skillz-text {
+        display: block;
+    }
+
+    .skillz-list {
+        flex-direction: row;
+        justify-content: space-between;
+        margin-top:3rem;
+    }
+
+    .skillz-text ul {
+        padding: 0;
+        width: 50%;
+    }
+
+    .skillz-text ul li {
+        font-size: 1.35rem;
+    }
+
+    /* photos */
+
+    .photos {
+        margin: 10rem 0 5rem 0;
+    }
+
+    .photos h1 {
+        font-size: 3.25rem;
+        margin:0;
+    }
+
+    .photos p {
+        font-size:1rem;
+        margin: 1rem 0;
+    }
+
+    .photo-grid {
+        grid-template-columns: auto;
+        margin: 3rem 0;
+    }
+
+    .photo-grid .photo {
+        padding: 0 1rem;
+        margin: 0.5rem 0;
+        background-size: cover;
+        width: 100%;
+        height: 15rem;
+    }
+
+    /* journals */
+
+    .journal {
+        margin: 5rem 0 15rem 0;
+    }
+
+    .journal h1 {
+        font-size: 3.25rem;
+        margin:0;
+    }
+
+    .journal p {
+        font-size:1rem;
+        margin: 1rem 0;
+    }
+
+    .journal-entries {
+        grid-template-columns: auto;
+        gap: 30px;
+        margin: 3rem 0;
+    }
+
+    .journal-entry h3 a {
+        font-size: 2rem;
+    }
+
+}

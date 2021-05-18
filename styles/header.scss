@@ -1,0 +1,188 @@
+header {
+    display:flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    position: fixed;
+    width:89%;
+    z-index: 6;
+}
+
+.logo {
+    font-family: alpine-script, sans-serif;
+    font-size: 55px;
+    color:#fff;
+    width:200px;
+}
+
+.logo span {
+    color:#cfaf00;
+}
+
+.logo a {
+    color:#fff;
+    text-decoration:none;
+}
+
+nav ul {
+    list-style:none;
+    margin:0;
+}
+
+nav ul li {
+    display:inline-block;
+    margin:0 1rem;
+}
+
+nav ul li a {
+    color:#fff;
+    font-weight:500;
+    font-size:18px;
+    text-decoration:none;
+}
+
+nav ul li a:hover {
+    text-decoration: underline;
+    text-decoration-color:  #cfaf00;
+}
+
+.hamburger {
+    display:none;
+}
+
+#burgerMenu {
+    display:none;
+}
+
+@media only screen and (max-width: 1024px) {
+
+    header {
+        width: 85%;
+    }
+
+    .menu {
+        display:none;
+    }
+
+    .hamburger {
+        display: block;
+        background-color: transparent;
+        -webkit-appearance: none;
+        -moz-appearance: none;
+        appearance: none;
+        border: none;
+        cursor: pointer;
+        border-radius: 0;
+        padding: 0;
+        z-index: 5;
+    }
+
+    header button .hamburger-icon {
+        width: 20px;
+        height: 15px;
+        position: relative;
+        margin: 0;
+        -webkit-transform: rotate(0deg);
+        transform: rotate(0deg);
+        -webkit-transition: all .25s ease-in-out;
+        transition: all .25s ease-in-out;
+        cursor: pointer;
+        color: currentColor;
+        z-index: 2;
+        -webkit-user-select: none;
+        -moz-user-select: none;
+        -ms-user-select: none;
+        user-select: none;
+        display: block;
+        }
+
+        header button .hamburger-icon span {
+            display: block;
+            position: absolute;
+            height: 1px;
+            width: 100%;
+            background: currentColor;
+            opacity: 1;
+            left: 0;
+            -webkit-transform: rotate(0deg);
+            transform: rotate(0deg);
+            -webkit-transform-origin: left center;
+            transform-origin: left center;
+            -webkit-transition: all 0.25s cubic-bezier(0.4, 0, 0.2, 1);
+            transition: all 0.25s cubic-bezier(0.4, 0, 0.2, 1);
+            color: #fff;
+        }
+
+        header button .hamburger-icon span:nth-child(1) {
+            top: 0;
+            height: 2px;
+        }
+        
+        header button .hamburger-icon span:nth-child(2) {
+            top: 6px;
+            height: 2px;
+            color:#cfaf00;
+            width: 15px;
+        }
+        
+        header button .hamburger-icon span:nth-child(3) {
+            top: 12px;
+            height: 2px;
+        }
+
+        header .click span:nth-child(1) {
+            transform: rotate(45deg) translate(1px, -2px);
+            height: 2px;
+            color: #cfaf00;
+        }
+        
+        header .click span:nth-child(2) {
+            opacity: 0;
+        }
+        
+        header .click span:nth-child(3) {
+            transform: rotate(-45deg) translate(3px, 0px);
+            height: 2px;
+            color: #cfaf00;
+            top: 15px;
+        }
+
+        #burgerMenu {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            position: fixed;
+            top: 0;
+            padding: 2rem 1rem;
+            width: 100vw;
+            height: 100vh;
+            background: #ededed;
+            color: #3c3c3c;
+            visibility: hidden;
+            opacity: 0;
+            transition: visibility 0s, opacity 0.2s linear;
+            z-index: 5;
+        }
+
+        #burgerMenu ul {
+            padding: 0;
+            list-style: none;
+        }
+
+        #burgerMenu ul li {
+            margin-bottom:1rem;
+        }
+
+        #burgerMenu ul li a {
+            font-size: 2rem;
+            font-weight: bold;
+            color: #3c3c3c;
+            text-decoration: none;
+            transition-duration:.2s
+        }
+
+        #burgerMenu .hamburgerSocial li a {
+            font-size: 1.25rem;
+        }
+
+}

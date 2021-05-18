@@ -1,0 +1,283 @@
+.work .projects {
+    margin: 10rem 0 25rem 0;
+}
+
+@media only screen and (max-width: 1024px) {
+    .work .projects {
+        margin: 4rem 0rem;
+    }
+
+    .work .projects h1 {
+        margin-top: 8rem;
+    }
+}
+
+/* work pages */
+
+.casestudy {
+    margin: 10rem 0;
+    scroll-behavior: smooth;
+}
+
+.casestudy-header h1 {
+    font-size: 6.25rem;
+    margin: 0;
+}
+
+.casestudy-header p {
+    font-size: 1.1875rem;
+    max-width: 800px;
+    margin-bottom:5rem;
+}
+
+.casestudy h2 {
+    font-size: 3.75rem;
+}
+
+.casestudy p {
+    font-size: 1.5625rem;
+    margin-bottom:3.5rem;
+    font-family: niveau-grotesk,sans-serif;
+    max-width: 800px;
+}
+
+.casestudy a {
+    color:#cfaf00;
+    text-decoration: none;
+}
+
+.casestudy a:hover {
+    color:#cfaf00;
+    text-decoration: underline;
+}
+
+.casestudy img {
+    max-width: 1200px;
+    margin-bottom: 3rem;
+}
+
+.casestudy video {
+    margin-bottom: 3rem;
+}
+
+.casestudy-focus {
+    border-left: 3px solid #cfaf00;
+}
+
+.casestudy-focus p {
+    margin-left: 2rem;
+}
+
+.casestudy ul {
+    list-style: none;
+}
+
+.casestudy ul li {
+    margin-bottom:1rem;
+}
+
+.casestudy ul li::before {
+    content: "•";
+    color: #cfaf00;
+    font-weight: bold;
+    display: inline-block;
+    width: 1em;
+    font-size: 2rem;
+    margin-left: -1em;
+  }
+
+.casestudy ul li a {
+    color:#3c3c3c;
+    font-weight:600;
+    font-size: 1.3rem;
+    text-decoration: none;
+}
+
+.casestudy ul li a:hover {
+    text-decoration: underline;
+}
+
+.casestudy-table {
+    padding: 0 4rem 0 0;
+}
+
+.casestudy-table-mobile {
+    display: none;
+}
+
+.casestudy-table-header, .casestudy-table-body {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.casestudy-table-header {
+    border-bottom:1px solid #cfaf00;
+}
+
+.casestudy-table-header h3 {
+    font-size: 1.5625rem;
+    width:50%;
+}
+
+.casestudy-table-body p {
+    width:50%;
+    font-size: 1.0625rem;
+    border-bottom: 1px solid #fff;
+    margin:1rem 0;
+    padding: 2rem 0;
+    padding-right: 4rem;
+}
+
+.custom-scroll {
+    margin-top:10rem;
+    height: 850px;
+    position: relative;
+    width: 100%;
+    padding-left:15%;
+}
+
+.custom-scroll div {
+    position: absolute;
+}
+
+.custom-scroll div img {
+    width: 75%;
+}
+
+.custom-scroll-mobile {
+    margin-top:10rem;
+    height: 250px;
+    position: relative;
+    width: 100%;
+    margin-left:0;
+}
+
+.custom-scroll-mobile div {
+    position: absolute;
+}
+
+.custom-scroll-mobile div img {
+    width: 100%;
+}
+
+.mb-anim {
+    transition: width 2s, height 2s, background-color 2s, transform 2s;
+}
+
+.frame {
+ z-index: 4
+}
+
+.leftarm {
+    z-index: 2
+}
+
+.rightarm {
+    z-index: 3
+}
+
+.lens {
+    z-index: 5
+}
+
+.hardware {
+    z-index: 4
+}
+
+.replatform {
+    margin-bottom: 30rem;
+}
+
+.custom-scroll-mobile {
+    display: none;
+}
+
+.casestudy button {
+    height: 50px;
+    width: 200px;
+    background: #fff;
+    border: none;
+    font-size: 1.3rem;
+    font-weight: 600;
+    transition: background-color 1s, transform 1s;
+}
+
+.casestudy button a {
+    color: #3c3c3c;
+}
+
+.casestudy button:hover {
+    background: #cfaf00;
+}
+
+.casestudy button a:hover {
+    color: #3c3c3c;
+    text-decoration: none;
+}
+
+@media only screen and (max-width: 1024px) {
+
+    .casestudy {
+        margin:3rem 0;
+    }
+
+    .casestudy-header h1 {
+        font-size: 3.25rem;
+        margin: 0;
+        margin-top:5rem;
+    }
+    
+    .casestudy-header p {
+        font-size: 1rem;
+    }
+    
+    .casestudy h2 {
+        font-size: 2.5rem;
+    }
+    
+    .casestudy p {
+        font-size: 1.25rem;
+    }
+    
+    .casestudy img {
+        max-width: 100%;
+        margin-bottom: 3rem;
+    }
+
+    .replatform {
+        margin-bottom: 10rem;
+        margin-top:0;
+    }
+
+    .casestudy-table {
+        display:none;
+    }
+
+    .casestudy-table-mobile {
+        display: block;
+    }
+
+    .casestudy-table-mobile h3 {
+        font-size: 1.5rem;
+    }
+
+    .casestudy-table-mobile p {
+        font-size: 1.2rem;
+        margin-bottom:1rem;
+    }
+
+    .custom-scroll-mobile {
+        display: block;
+    }
+
+    .custom-scroll {
+        display: none;
+    }
+
+    .casestudy video {
+       width:100%;
+    }
+    
+
+}

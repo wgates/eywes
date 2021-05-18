@@ -1,0 +1,119 @@
+---
+title: eywes | technologist, shopify developer, photo/video guy
+description: portfilio website for wes gates, senior technology manager, shopify developer.
+---
+
+<!doctype html>
+    <html lang="en">
+    
+    <head>
+      <meta charset="utf-8">
+      <title>{{ title or renderData.title or metadata.title }}</title>
+      <meta name="description" content="{{ description or renderData.description }}">
+      <meta name="author" content="Wes Gates">
+      <meta name="keywords" content="shopify developer, technology manager, ux designer, san diego, freelance developer, san diego developer">
+
+      <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+      <meta http-equiv="X-UA-Compatible" content="IE=edge">
+      <meta name="robots" content="index, follow">
+      <link rel="canonical" href=https://eywes.com{{ page.url }}>
+    
+      <meta property="og:title" content="{{ title or renderData.title or metadata.title }}">
+      <meta property="og:description" content="{{ description or renderData.description }}">
+      <meta property="og:locale" content="en_US">
+      <meta property="og:site_name" content="eywes">
+      <meta property="og:type" content="website">
+      <meta property="og:url" content="https://eywes.com{{ page.url }}">
+      <meta property="og:image" content="">
+    
+      <link rel="manifest" href="site.webmanifest">
+      <link rel="apple-touch-icon" sizes="180x180" href="/assets/apple-touch-icon.png">
+      <link rel="icon" type="image/png" sizes="32x32" href="/assets/favicon.png">
+    
+      <link rel="stylesheet" href="/styles/styles.css">
+      <link rel="stylesheet" href="https://use.typekit.net/xci3dtz.css" type="text/css">
+
+      <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+      <script src="/scripts/jquery.scrollie.js" defer></script>
+    
+      <meta name="theme-color" content="#3C3C3C">
+    </head>
+    
+    <body>
+      <div class="container">
+      
+        {% include 'layouts/header.njk' %}
+    
+        {{ content | safe }}
+
+        {% include 'layouts/footer.njk' %}
+
+      </div>
+
+      <div id="burgerMenu" style="visibility: hidden; opacity: 0;">
+          <ul>
+              <li><a href="/work">work</a></li>
+              <li><a href="/photo">photo/video</a></li>
+              <li><a href="/about">resume</a></li>
+              <li><a href="/thoughts">thoughts</a></li>
+              <li><a href="/contact">contact</a></li>
+          </ul>
+          <ul class="hamburgerSocial">
+              <li><a href="https://instagram.com/eywes" alt="eydev instagram" target="_blank">instagram</a></li>
+              <li><a href="https://facebook.com/eyywes" alt="eydev facebook" target="_blank">twitter</a></li>
+              <li><a href="https://linkedin.com/wesgates" alt="eydev facebook" target="_blank">linkedin</a></li>
+              <li><a href="https://youtube.com/eywes" alt="eydev facebook" target="_blank">youtube</a></li>
+          </ul>
+        </div>
+
+      <script>
+        $( window ).ready(function() {
+        var wHeight = $(window).height();
+
+          $('.bgcolor')
+            .scrollie({
+            scrollOffset : -50,
+            scrollingInView : function(elem) {      
+              var bgColor = elem.data('background');
+              $('body').css('background-color', bgColor);
+            }
+          });
+        });
+
+        function hamBurger() {
+          var x = document.getElementById("burgerMenu");
+          if (x.style.visibility === "visible") {
+            x.style.visibility = "hidden";
+            x.style.opacity = "0";
+            x.style.height = "0px";
+          } else {
+            x.style.visibility = "visible";
+            x.style.opacity = "1";
+            x.style.height = "100vh";
+          }
+        }
+
+          function toggleMenu() {
+            y = document.querySelector(".hamburger-icon");
+            y.classList.toggle("click");
+        }
+
+        $(document).ready(function() {
+          $(window).scroll( function(){
+            $('.hideme').each( function(i){
+            
+            var bottom_of_object = $(this).position().top + $(this).outerHeight();
+            var bottom_of_window = $(window).scrollTop() + $(window).height();
+            
+            if( bottom_of_window > bottom_of_object ){
+                $(this).animate({'opacity':'1'},350);
+            }
+          }); 
+
+        });
+      });
+
+      </script>
+    
+    </body>
+    </html>

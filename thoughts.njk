@@ -1,0 +1,35 @@
+---
+layout: layouts/main.njk
+permalink: /thoughts/
+data: collections.thoughts
+size: 6
+alias: posts
+title: thoughts | eywes
+description: blog page for wes gates, senior technology manager, shopify developer.
+---
+
+<style>
+  body {
+      background-color:#fff;
+  }
+
+  .logo, nav ul li a, footer, footer ul li a, header button .hamburger-icon span, .logo a, h1, p {
+      color: #3c3c3c;
+  }
+</style>
+
+<div class="journal bgcolor" data-background="#fff">
+  <h1>journal entries</h1>
+  <p>a small collection of my thoughts and ideas</p>
+
+  <div class="journal-entries">
+  {% for thoughts in collections.thoughts %}
+    <div class="journal-entry">
+        <h3><a href="{{ thoughts.url | url }}">{{ thoughts.data.title }}</a></h3>
+        <p>{{ thoughts.data.post_date }}</p>
+    </div>
+  {% endfor %}
+</div>
+
+</div>
+
